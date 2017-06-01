@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0024)https://appr.tc/r/sazzad -->
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,10 +17,7 @@
 
     <title>AppRTC</title>
 
-    <link rel="manifest" href="https://appr.tc/manifest.json">
-    <link rel="icon" sizes="192x192" href="https://appr.tc/images/webrtc-icon-192x192.png">
-
-    <link rel="canonical" href="https://appr.tc/r/sazzad">
+    <link rel="canonical" href="https://apprtc.dev/r/sazzad">
 
     <link rel="stylesheet" href="./main.css">
 
@@ -66,7 +62,7 @@
 <footer>
     <div id="sharing-div" class="active">
         <div id="room-link">Waiting for someone to join this room: <a id="room-link-href"
-                                                                      href="https://appr.tc/r/sazzad" target="_blank">https://appr.tc/r/sazzad</a>
+                                                                      href="https://apprtc.dev/r/sazzad" target="_blank">https://apprtc.dev/r/sazzad</a>
         </div>
     </div>
     <div id="info-div"><pre id="info-box-stats" style="line-height: initial">Version:
@@ -140,7 +136,20 @@ time:       Wed May 3 16:23:48 2017 +0200
 </div>
 
 
-<script src="./apprtc.debug.php"></script>
+<script src="./js/util.js"></script>
+<script src="./js/appcontroller.js"></script>
+<script src="./js/adapter.js"></script>
+<script src="./js/call.js"></script>
+<script src="./js/constants.js"></script>
+<script src="./js/infobox.js"></script>
+<script src="./js/peerconnectionclient.js"></script>
+<script src="./js/remotewebsocket.js"></script>
+<script src="./js/roomselection.js"></script>
+<script src="./js/sdputils.js"></script>
+<script src="./js/signalingchannel.js"></script>
+<script src="./js/stats.js"></script>
+<script src="./js/storage.js"></script>
+<script src="./js/windowport.js"></script>
 
 
 <script type="text/javascript">
@@ -148,9 +157,9 @@ time:       Wed May 3 16:23:48 2017 +0200
         errorMessages: [],
         isLoopback: false,
         warningMessages: [],
-
+        roomServer: 'https://apprtc.dev',
         roomId: 'sazzad',
-        roomLink: 'https://appr.tc/r/sazzad',
+        roomLink: 'https://apprtc.dev/r/sazzad',
 
 
         mediaConstraints: {
